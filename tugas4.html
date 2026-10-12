@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rangkuman materi pertemuan pertama tentang domain, hosting, dan website.">
+    <title>Tugas 1</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+            color: #333;
+            line-height: 1.7;
+        }
+
+        .hero {
+            display: grid;
+            min-height: 270px;
+            place-items: center;
+            padding: 40px 24px;
+            background: linear-gradient(135deg, #4f46e5, #7c3aed, #9333ea);
+            color: white;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 760px;
+        }
+
+        .eyebrow {
+            margin-bottom: 12px;
+            color: #ddd6fe;
+            font-size: 14px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .hero h1 {
+            margin-bottom: 12px;
+            font-size: 36px;
+            line-height: 1.15;
+        }
+
+        .hero p {
+            font-size: 18px;
+        }
+
+        main {
+            width: min(100% - 40px, 960px);
+            margin: 0 auto;
+            padding: 58px 0 72px;
+        }
+
+        .overview {
+            margin-bottom: 28px;
+            padding: 28px 32px;
+            border-left: 5px solid #4f46e5;
+            border-radius: 10px;
+            background: white;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+        }
+
+        .overview h2,
+        .section-title {
+            margin-bottom: 12px;
+            color: #4f46e5;
+            font-size: 25px;
+            line-height: 1.3;
+        }
+
+        .overview p,
+        .topic p {
+            color: #555;
+        }
+
+        .topics {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 20px;
+            margin: 28px 0;
+        }
+
+        .topic {
+            display: grid;
+            grid-template-columns: 36px minmax(0, 1fr);
+            align-items: center;
+            column-gap: 12px;
+            padding: 24px;
+            border-radius: 12px;
+            background: white;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+        }
+
+        .topic-number {
+            display: inline-grid;
+            width: 36px;
+            height: 36px;
+            place-items: center;
+            border-radius: 50%;
+            background: #eef2ff;
+            color: #4f46e5;
+            font-weight: bold;
+        }
+
+        .topic h3 {
+            margin: 0;
+            color: #4f46e5;
+            font-size: 19px;
+        }
+
+        .topic p {
+            grid-column: 1 / -1;
+            margin-top: 12px;
+        }
+
+        .flow {
+            margin-top: 18px;
+            padding: 22px 26px;
+            border-radius: 10px;
+            background: #eef2ff;
+            color: #3730a3;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 28px;
+            color: #4f46e5;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            padding: 24px;
+            background: #1e1b4b;
+            color: white;
+            text-align: center;
+        }
+
+        @media (max-width: 700px) {
+            .hero {
+                min-height: 220px;
+                padding: 32px 20px;
+            }
+
+            .hero h1 {
+                font-size: 30px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            main {
+                width: min(100% - 32px, 960px);
+                padding: 40px 0 54px;
+            }
+
+            .topics {
+                grid-template-columns: 1fr;
+            }
+
+            .overview {
+                padding: 23px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="hero">
+        <div class="hero-content">
+            <p class="eyebrow">Tugas 4 · Mata Kuliah TTI</p>
+            <h1>Rangkuman Materi 4</h1>
+        </div>
+    </header>
+    <main>
+        <h2 class="section-title">Materi Utama</h2>
+        <div class="topics">
+            <article class="topic">
+                <span class="topic-number">1</span>
+                <h3>Pengertian Program, Aplikasi, dan Sistem Operasi</h3>
+                <p>Program/software adalah sekumpulan instruksi yang saling berkaitan dan dibuat untuk tujuan tertentu. Program memberi tahu komputer tugas apa yang harus dilakukan dan bagaimana melakukannya.</p>
+                <p>Application (app) adalah program yang dirancang untuk membantu pengguna menjadi lebih produktif atau melakukan tugas pribadi.</p>
+                <p>Operating system (OS) adalah sekumpulan program yang mengatur dan mengoordinasikan seluruh aktivitas antara hardware komputer/perangkat mobile.</p>
+            </article>
+            <article class="topic">
+                <span class="topic-number">2</span>
+                <h3>Productivity Applications</h3>
+                <p>Productivity applications membantu pengguna bekerja lebih efektif dan efisien dalam aktivitas sehari-hari, baik di tempat kerja, sekolah, maupun rumah.</p>
+            </article>
+            <article class="topic">
+                <span class="topic-number">3</span>
+                <h3>Graphics and Media Software</h3>
+                <p>Multimedia authoring software memungkinkan pengguna menggabungkan teks, grafik, audio, video, dan animasi menjadi aplikasi interaktif.</p>
+                <p>Website authoring software membantu pengguna membuat halaman web yang dapat berisi grafik, video, audio, animasi, efek khusus, dan konten interaktif.</p>
+                <p>Media player digunakan untuk melihat gambar/animasi, mendengarkan audio, dan menonton video. Sementara disc burning software digunakan untuk menulis data seperti teks, grafik, audio, dan video ke media disk yang dapat direkam.</p>
+            </article>
+            <article class="topic">
+                <span class="topic-number">4</span>
+                <h3>Security Tools</h3>
+                <p>Software keamanan berfungsi melindungi komputer, perangkat, dan data dari berbagai ancaman.
+                <p>Personal Firewall</p>
+<p>Melindungi komputer dan data dari akses atau penyusupan yang tidak sah.</p>
+                <p>Antivirus</p>
+                <p>Melindungi komputer dari virus dengan mendeteksi dan menghapus virus yang terdapat di memori, media penyimpanan, atau file yang masuk.</p>
+                <p>Spyware</p>
+                <p>Program yang dipasang tanpa sepengetahuan pengguna dan secara diam-diam mengumpulkan informasi pengguna lalu mengirimkannya ke pihak luar.</p>
+                <p>Adware</p>
+                <p>Program yang menampilkan iklan online, misalnya dalam bentuk banner atau pop-up.</p>
+                <p>Ada pula:</p>
+                
+                    <p>Spyware remover → mendeteksi dan menghapus spyware.</p>
+                    <p>Adware remover → mendeteksi dan menghapus adware.</p>
+                    <p>Anti-spam → membantu menangani spam.</p>
+                    <p>Phishing filters → menyaring ancaman phishing.</p>
+                    <p>Web filtering → menyaring konten web.</p>
+                    <p>Pop-up/pop-under blockers → memblokir jendela iklan tertentu.</p>
+            </article>
+            <article class="topic">
+                <span class="topic-number">5</span>
+                <h3>File, Disk, and System Management Tools</h3>
+                <p>Tools ini digunakan untuk mengelola file, penyimpanan, dan sistem komputer.</p>
+                <p>File manager → melakukan berbagai fungsi pengelolaan file.</p>
+                <p>Search tool → mencari file, kontak, acara kalender, aplikasi, atau item lain berdasarkan kriteria tertentu.</p>
+                <p>Image viewer → menampilkan, menyalin, dan mencetak file gambar.</p>
+                <p>Uninstaller → menghapus program beserta entri terkait dalam file sistem.</p>
+                <p>Disk Cleanup  : Mencari dan menghapus file-file yang tidak diperlukan.</p>
+                <p>Disk Defragmenter → Mengatur kembali file dan ruang kosong pada hard disk agar sistem operasi dapat mengakses data lebih cepat dan program dapat berjalan lebih cepat.</p>
+                <p>Backup & Restore</p>
+                <p>- Backup tool → membuat salinan file atau seluruh isi media penyimpanan ke lokasi lain.</p>
+                <p>- Restore tool → mengembalikan file yang telah di-backup ke bentuk/lokasi semula</p>
+            </article>
+        </div>
+        <a class="back-link" href="index.html#tugas">&larr; Kembali ke daftar tugas</a>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 MyWebsite. Dibuat dengan HTML.</p>
+    </footer>
+</body>
+</html>
